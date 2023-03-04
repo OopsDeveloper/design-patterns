@@ -5,6 +5,7 @@ import me.whiteship.designpatterns._03_behavioral_patterns._16_iterator._01_befo
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Board {
 
@@ -19,7 +20,9 @@ public class Board {
     }
 
     public Iterator<Post> getRecentPostIterator() {
-        return new RecentPostIterator(this.posts);
+        List<Post> posts1 = posts;
+        posts1.stream().collect(Collectors.toList());
+        return new RecentPostIterator(posts1);
     }
 
 
