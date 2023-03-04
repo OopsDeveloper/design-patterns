@@ -20,9 +20,9 @@ public class Board {
     }
 
     public Iterator<Post> getRecentPostIterator() {
-        List<Post> posts1 = posts;
-        posts1.stream().collect(Collectors.toList());
-        return new RecentPostIterator(posts1);
+        List<Post> copy = posts;
+        copy.stream().collect(Collectors.toList());
+        return new RecentPostIterator(copy);
     }
 
 
