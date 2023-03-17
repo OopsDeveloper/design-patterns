@@ -14,6 +14,6 @@ public class User implements Subscriber {
 
     @Override
     public void handleMessage(String message) {
-        System.out.println(message);
+        System.out.println("핸들메세지 " + message);
     }
 }
