@@ -41,6 +41,9 @@ public class GithubIssue implements Cloneable {
                 this.getId());
     }
 
+    //자바는 기본적으로 shallow copy를 지원하므로 deep copy로 변경
+    //자바가 기본적으로 제공하는 clone 기능을 사용하지 않게 되는 경우에 해당
+    //shallow copy를 하려면 return super.clone()를 쓰면 자바가 기본적으로 제공하는거 쓰게 된다.
     @Override
     protected Object clone() throws CloneNotSupportedException {
         GithubRepository repository = new GithubRepository();
