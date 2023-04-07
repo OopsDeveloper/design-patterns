@@ -13,6 +13,9 @@ public class App {
 
         String url = githubIssue.getUrl();
         System.out.println(url);
+
+        //TODO clone != githubIssue
+        //TODO clone.equals(githubIssue) => true
     }
 
 }
