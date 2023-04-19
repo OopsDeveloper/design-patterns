@@ -9,7 +9,8 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class Client {
-
+    // 현재 클라이언트 코드들이 서로간에 얽혀 있다.
+    // 현재는 세션이 있어야 메세지를 만들 수 있고 메세지가 있어야 트랜스포트를 할 수 있다.
     public static void main(String[] args) {
         String to = "keesun@whiteship.me";
         String from = "whiteship@whiteship.me";
