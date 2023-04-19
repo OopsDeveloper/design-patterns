@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FontFactory {
+    // flyweight에 팩토리에 해당
 
     private Map<String, Font> cache = new HashMap<>();
 
