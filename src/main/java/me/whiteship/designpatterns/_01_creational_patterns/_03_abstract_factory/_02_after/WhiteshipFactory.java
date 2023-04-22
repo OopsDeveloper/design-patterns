@@ -17,8 +17,8 @@ public class WhiteshipFactory extends DefaultShipFactory {
     @Override
     public Ship createShip() {
         Ship ship = new Whiteship();
-        ship.setAnchor(shipPartsFactory.createAnchor());
-        ship.setWheel(shipPartsFactory.createWheel());
+        ship.setAnchor(shipPartsFactory.createAnchor()); // 이 부분이 추상화되는 것
+        ship.setWheel(shipPartsFactory.createWheel()); // 이 부분이 추상화되는 것
         return ship;
     }
 }
