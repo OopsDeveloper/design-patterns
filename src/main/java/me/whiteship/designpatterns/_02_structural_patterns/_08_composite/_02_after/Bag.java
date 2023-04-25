@@ -8,11 +8,11 @@ public class Bag implements Component {
 
     private List<Component> components = new ArrayList<>();
 
-    public void add(Component component) {
+    public void add(Component component) { //컴포넌트 타입으로 지정
         components.add(component);
     }
 
-    public List<Component> getComponents() {
+    public List<Component> getComponents() { //컴포넌트 타입으로 지정
         return components;
     }
 
