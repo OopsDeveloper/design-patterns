@@ -2,7 +2,7 @@ package me.whiteship.designpatterns._02_structural_patterns._09_decorator._01_be
 
 public class Client {
 
-    private CommentService commentService;
+    private CommentService commentService; //댓글을 남기는 서비스
 
     public Client(CommentService commentService) {
         this.commentService = commentService;
