@@ -6,7 +6,6 @@ public class Client {
         Game game = new Game();
         game.setRedTeamScore(10);
         game.setBlueTeamScore(20);
-        /*test*/
 
         int blueTeamScore = game.getBlueTeamScore();
         int redTeamScore = game.getRedTeamScore();
