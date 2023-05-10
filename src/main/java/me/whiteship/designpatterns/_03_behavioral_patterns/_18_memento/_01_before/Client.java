@@ -7,6 +7,7 @@ public class Client {
         game.setRedTeamScore(10);
         game.setBlueTeamScore(20);
 
+        //캡슐화가 깨진 것: 게임을 구성하는 정보를 클라이언트가 다 알아야되서
         int blueTeamScore = game.getBlueTeamScore();
         int redTeamScore = game.getRedTeamScore();
 
