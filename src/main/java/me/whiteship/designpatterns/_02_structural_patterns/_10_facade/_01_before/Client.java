@@ -13,8 +13,8 @@ public class Client {
     // 현재는 세션이 있어야 메세지를 만들 수 있고 메세지가 있어야 트랜스포트를 할 수 있다.
     // 지금 코드들은 API 라이브러리에 대한 깊이 있는 학습이 필요.
     public static void main(String[] args) {
-        String to = "keesun@whiteship.me";
-        String from = "whiteship@whiteship.me";
+        String to = "oopsdev@naver.com";
+        String from = "oopsdev@naver.com";
         String host = "127.0.0.1";
 
         Properties properties = System.getProperties();

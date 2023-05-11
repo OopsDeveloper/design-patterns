@@ -5,8 +5,8 @@ public class EmailMessage {
     private String from;
 
     private String to;
-    private String cc;
-    private String bcc;
+    private String cc; //참조
+    private String bcc; //숨은참조
 
     private String subject;
 
