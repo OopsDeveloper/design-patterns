@@ -15,6 +15,7 @@ public class ChatServer {
 
 
     public void add(String subject, String message) {
+        //기존에 존재하는 주제면, 해당 subject에 내용을 추가 그렇지않으면 새로 만들어서 messages에 추가
         if (messages.containsKey(subject)) {
             messages.get(subject).add(message);
         } else {
