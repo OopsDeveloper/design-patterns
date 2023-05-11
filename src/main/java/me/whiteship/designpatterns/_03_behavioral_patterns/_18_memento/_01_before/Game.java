@@ -1,8 +1,7 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._18_memento._01_before;
 
-import java.io.Serializable;
 
-public class Game implements Serializable {
+public class Game{
 
     private int redTeamScore;
 

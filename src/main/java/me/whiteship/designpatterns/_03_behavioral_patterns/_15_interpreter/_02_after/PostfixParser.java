@@ -13,7 +13,7 @@ public class PostfixParser {
         }
         return stack.pop();
     }
-
+/*
     private static PostfixExpression getExpression(char c, Stack<PostfixExpression> stack) {
         switch (c) {
             case '+':
@@ -24,6 +24,19 @@ public class PostfixParser {
                 return new MinusExpression(left, right);
             default:
                 return new VariableExpression(c);
+        }
+    }
+    */
+    private static PostfixExpression getExpression(char c, Stack<PostfixExpression> stack) {
+        switch (c) {
+            case '+':
+                return plus(stack.pop(), stack.pop());
+            case '-':
+                PostfixExpression right = stack.pop();
+                PostfixExpression left = stack.pop();
+                return minus(left, right);
+            default:
+                return variable(c);
         }
     }
 }
