@@ -3,16 +3,16 @@ package me.whiteship.designpatterns._03_behavioral_patterns._20_state._01_before
 public class Client {
 
     public static void main(String[] args) {
-        Student student = new Student("whiteship");
+        Student student = new Student("oOpsDev");
         OnlineCourse onlineCourse = new OnlineCourse();
 
-        Student keesun = new Student("keesun");
-        keesun.addPrivateCourse(onlineCourse);
+        Student go = new Student("Go");
+        go.addPrivateCourse(onlineCourse);
 
         onlineCourse.addStudent(student);
         onlineCourse.changeState(OnlineCourse.State.PRIVATE);
 
-        onlineCourse.addStudent(keesun);
+        onlineCourse.addStudent(go);
 
         onlineCourse.addReview("hello", student);
 
